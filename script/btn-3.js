@@ -27,6 +27,7 @@ document.getElementById("home-page-btn").addEventListener("click", function (eve
     `;
 
     container.appendChild(p);
+
     document.getElementById("home-page-btn").disabled = true;
     document.getElementById("home-page-btn").style.backgroundColor = "lightgray"
 })

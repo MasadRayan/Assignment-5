@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My questions</title>
+    <!-- daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/e21f3df6f5.js" crossorigin="anonymous"></script>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .poppins-regular {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+
+</head>
+
+<body class="poppins-regular container mx-auto pt-5 pb-5">
+    <header class="bg-white shadow-2xl rounded-3xl  mb-5">
+        <nav class="p-5 flex items-center justify-between">
+            <div class=" flex items-center">
+                <img class="mr-2" src="assets/logo.png" alt="">
+                <p class="text-3xl">Dev<span class="font-bold">Board</span></p>
+            </div>
+            <div>
+                <button id="back-to-desk"
+                    class="text-white font-medium px-4 py-4 bg-[#3752FD] rounded-lg">Back to Desk</button>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <h1 class="text-center text-4xl font-bold mb-5">Blogs</h1>
+        <div class="p-4 mb-5 shadow-xl rounded-xl">
+            <p class="text-2xl font-semibold border-b-2 border-dashed pb-4 border-gray-400 mb-4">
+                Question-1: What are the different ways to select an element in the DOM?
+            </p>
+            <p class="text-[#00303C] text-lg">
+                There are many way to select an element in the dom like: <br>
+                1.getElementByID(); -> it take an element by the id of the element <br>
+                2.getElementsByClassName(); -> it take all the elements by the same class name<br>
+                3.getElementsByTagName(); -> it take all the element by the same tag name <br>
+                4.querySelector(); -> it take the only first matched element when we search by the css property<br>
+                5.querySelectorAll(); -> it take all the elements when we search by the css property <br>
+                6.document.forms; -> Used to select form elements by their name <br>
+                7.document.links; -> return all the ancor tag element of the page<br>
+            </p>
+        </div>
+        <div class="p-4 mb-5 shadow-xl rounded-xl">
+            <p class="text-2xl font-semibold border-b-2 border-dashed pb-4 border-gray-400 mb-4">
+                Question-2: What is the difference between innerHTML, innerText, and textContent?
+            </p>
+            <p class="text-[#00303C]">
+                1.innerText = it only retuens the visiable text of an element <br>
+                2.innerHtml = it retuens the hole structire of the element we can also rwewite the hole structure of the element <br>
+                3.textContent = it is similar to innertext it also return the text but it also retuen the hidden text it means both hidden and normal text <br>
+            </p>
+        </div>
+        <div class="p-4 mb-5 shadow-xl rounded-xl">
+            <p class="text-2xl font-semibold border-b-2 border-dashed pb-4 border-gray-400 mb-4">
+                Question-3: What is event delegation in the DOM?
+            </p>
+            <p class="text-[#00303C]">
+                event delegation is a technic where we can access all the childNode using the parentNode
+            </p>
+        </div>
+        <div class="p-4 mb-5 shadow-xl rounded-xl">
+            <p class="text-2xl font-semibold border-b-2 border-dashed pb-4 border-gray-400 mb-4">
+                Question-4: What is event bubbling in the DOM?
+            </p>
+            <p class="text-[#00303C]">
+                event bubbling is a part of a dom tree when it starts from the target node and get upwards it calles event bubbleing
+            </p>
+        </div>
+        <div class="p-4 mb-5 shadow-xl rounded-xl">
+            <p class="text-2xl font-semibold border-b-2 border-dashed pb-4 border-gray-400 mb-4">
+                Question-5: How do you create, add, and remove elements using JavaScript?
+            </p>
+            <p class="text-[#00303C]">
+                1.For create= we can create an element by writting document.creatElement("here we write the type of the element") than an element is created <br>
+                2.For add = first we have to declear a parent element than we have to create an element than we can add the nwely created element to the parent element by using .appenchild <br>
+                3.We can remove an element by using .removeChild from a parentNode
+            </p>
+        </div>
+    </section>
+
+    <script src="script/back-btn.js"></script>
+</body>
+
+</html>
